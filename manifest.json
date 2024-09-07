@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+        "name": "Google",
+        "keyword": "google",
+        "search_url": "https://www.google.com/search?q={searchTerms}",
+        "encoding": "UTF-8",
+        "is_default": true,
+        "favicon_url":"http://www.google.com/s2/favicons?domain=google.com"
+    }
+   }
+}
